@@ -1,0 +1,52 @@
+<%- include("./partials/header.ejs") %>
+    <main>
+        <div class="container">
+            <form id="dateForm" action="/" method="post">
+                <div class="input-sec">
+                    <!-- Day -->
+                    <div class="input-box">
+                        <div class="input-head">
+                            DAY
+                        </div>
+                        <input id="day" type="text" name="day" placeholder="DD">
+                    </div>
+                    <!-- Month -->
+                    <div class="input-box">
+                        <div class="input-head">
+                            MONTH
+                        </div>
+                        <input id="month" type="text" name="month" placeholder="MM">
+                    </div>
+                    <!-- Year -->
+                    <div class="input-box">
+                        <div class="input-head">
+                            YEAR
+                        </div>
+                        <input id="year" type="text" name="year" placeholder="YYYY">
+                    </div>
+
+                    <div class="btn" onclick="document.getElementById('dateForm').submit()">
+                        <img src="/assets/images/icon-arrow.svg" alt="icon-arrow">
+                    </div>
+                </div>
+            </form>
+            <div class="line"></div>
+            <div class="result-output-sec">
+                <div>
+                    <span id="show-year" class="output">--</span>
+                    <p>years</p>
+                </div>
+                <div>
+                    <span id="show-month" class="output">--</span>
+                    <p>months</p>
+                </div>
+                <div>
+                    <span id="show-day" class="output">--</span>
+                    <p>days</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <%- include("./partials/footer.ejs") %>
