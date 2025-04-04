@@ -52,11 +52,12 @@ main {
 
 .input-box {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     flex-direction: column;
     gap: 10px;
     width: 40%;
+    height: 107px;
 }
 
 .input-sec input[type="text"] {
@@ -68,6 +69,8 @@ main {
     outline-width: 1px;
     caret-color: var(--Purple);
     cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid var(--Off-black);
 }
 
 input::placeholder {
@@ -94,6 +97,7 @@ input::placeholder {
     bottom: -58px;
     right: -50px;
     cursor: pointer;
+    border: none;
 }
 
 .btn:hover {
@@ -128,5 +132,20 @@ input::placeholder {
 .result-output-sec div p {
     font-size: 32px;
     font-weight: 800;
+    font-style: italic;
+}
+
+.error {
+    color: var(--Light-red);
+}
+
+.day-err-msg,
+.month-err-msg,
+.year-err-msg,
+.show-valid-date-msg {
+    font-size: 11px;
+    color: var(--Light-red);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     font-style: italic;
 }

@@ -5,48 +5,59 @@
                 <div class="input-sec">
                     <!-- Day -->
                     <div class="input-box">
-                        <div class="input-head">
+                        <div class="input-head day-title">
                             DAY
                         </div>
                         <input id="day" type="text" name="day" placeholder="DD" autocomplete="off">
+                        <p class="day-err-msg">
+                        </p>
+                        <p class="show-valid-date-msg">
+                        </p>
                     </div>
                     <!-- Month -->
                     <div class="input-box">
-                        <div class="input-head">
+                        <div class="input-head month-title">
                             MONTH
                         </div>
                         <input id="month" type="text" name="month" placeholder="MM" autocomplete="off">
+                        <p class="month-err-msg"></p>
                     </div>
                     <!-- Year -->
                     <div class="input-box">
-                        <div class="input-head">
+                        <div class="input-head year-title">
                             YEAR
                         </div>
                         <input id="year" type="text" name="year" placeholder="YYYY" autocomplete="off">
+                        <p class="year-err-msg"></p>
                     </div>
 
-                    <div class="btn" onclick="document.getElementById('dateForm').submit()">
+                    <button type="submit" class="btn">
                         <img src="/assets/images/icon-arrow.svg" alt="icon-arrow">
-                    </div>
+                    </button>
                 </div>
             </form>
             <div class="line"></div>
             <div class="result-output-sec">
                 <div>
-                    <span id="show-year" class="output">--</span>
+                    <span id="show-year" class="output">
+                        <%= typeof Year !=='undefined' ? Year : "--" %>
+                    </span>
                     <p>years</p>
                 </div>
                 <div>
-                    <span id="show-month" class="output">--</span>
+                    <span id="show-month" class="output">
+                        <%= typeof Month !=='undefined' ? Month : "--" %>
+                    </span>
                     <p>months</p>
                 </div>
                 <div>
-                    <span id="show-day" class="output">--</span>
+                    <span id="show-day" class="output">
+                        <%= typeof Day !=='undefined' ? Day : "--" %>
+                    </span>
                     <p>days</p>
                 </div>
             </div>
         </div>
     </main>
-
 
     <%- include("./partials/footer.ejs") %>
