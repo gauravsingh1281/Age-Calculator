@@ -11,7 +11,7 @@ inputForm.addEventListener("submit", function (e) {
   const showMonthErrMsg = document.querySelector(".month-err-msg");
   const showYearErrMsg = document.querySelector(".year-err-msg");
   const showValidDateErrMsg = document.querySelector(".show-valid-date-msg");
-
+  let dayValue, monthValue, yearValue;
   let isValid = true;
   //Reset error messages
   showDayErrMsg.textContent = "";
@@ -33,7 +33,7 @@ inputForm.addEventListener("submit", function (e) {
   //for day
 
   if (day.value.trim() !== "") {
-    const dayValue = Number(day.value);
+    dayValue = Number(day.value);
     if (isNaN(dayValue) || dayValue < 1 || dayValue > 31) {
       showDayErrMsg.textContent = "Must be a valid day";
       dayHeading.classList.add("error");
@@ -49,7 +49,7 @@ inputForm.addEventListener("submit", function (e) {
 
   //for month
   if (month.value.trim() !== "") {
-    const monthValue = Number(month.value);
+    monthValue = Number(month.value);
     if (isNaN(monthValue) || monthValue < 1 || monthValue > 12) {
       showMonthErrMsg.textContent = "Must be a valid month";
       monthHeading.classList.add("error");
@@ -65,7 +65,7 @@ inputForm.addEventListener("submit", function (e) {
 
   //For year
   if (year.value.trim() !== "") {
-    const yearValue = Number(year.value);
+    yearValue = Number(year.value);
     if (isNaN(yearValue) || yearValue < 1000 || yearValue > currentYear) {
       showYearErrMsg.textContent = "Must be in the past";
       yearHeading.classList.add("error");
@@ -91,7 +91,6 @@ inputForm.addEventListener("submit", function (e) {
       day.style.border = "1px solid var(--Light-red)";
       month.style.border = "1px solid var(--Light-red)";
       year.style.border = "1px solid var(--Light-red)";
-
       isValid = false;
     }
   }
