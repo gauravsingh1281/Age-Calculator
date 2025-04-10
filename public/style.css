@@ -128,6 +128,8 @@ input::placeholder {
     font-size: 45px;
     color: var(--Purple);
     font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
 }
 
 .result-output-sec div p {
@@ -150,4 +152,86 @@ input::placeholder {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: italic;
+}
+
+@media(max-width:630px) {
+    .container {
+        background-color: var(--White);
+        width: 295px;
+        height: fit-content;
+        padding: 30px 18px;
+        border-radius: 20px 20px 132px 20px;
+        box-shadow: 4px 5px 3px gray;
+    }
+
+    .input-sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        width: 100%;
+    }
+
+    .input-sec input[type="text"] {
+        width: 81%;
+        padding: 8px 7px;
+        font-size: 17px;
+        font-weight: 700;
+        outline-color: var(--Purple);
+        outline-width: 1px;
+        caret-color: var(--Purple);
+        cursor: pointer;
+        border-radius: 6px;
+        border: 1px solid var(--Off-black);
+    }
+
+    .btn {
+        width: 50px;
+        height: 50px;
+        background-color: var(--Purple);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -72px;
+        right: 42%;
+        cursor: pointer;
+        border: none;
+    }
+
+    .line {
+        height: 1px;
+        width: 100%;
+        background-color: var(--Light-grey);
+        margin: 46px 0;
+    }
+
+    .output {
+        font-size: 38px;
+        color: var(--Purple);
+        font-weight: 800;
+        font-family: "Poppins", sans-serif;
+        font-style: italic;
+    }
+
+    .result-output-sec div p {
+        font-size: 38px;
+        font-weight: 800;
+        font-family: "Poppins", sans-serif;
+        font-style: italic;
+    }
+
+    .day-err-msg,
+    .month-err-msg,
+    .year-err-msg,
+    .show-valid-date-msg {
+        font-size: 8px;
+        color: var(--Light-red);
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        white-space: nowrap;
+    }
 }
