@@ -8,7 +8,8 @@
                         <div class="input-head day-title">
                             DAY
                         </div>
-                        <input id="day" type="text" name="day" placeholder="DD" autocomplete="off">
+                        <input id="day" type="text" name="day" placeholder="DD" autocomplete="off"
+                            value="<%= userDay ?? '' %>">
                         <p class="day-err-msg">
                         </p>
                         <p class="show-valid-date-msg">
@@ -19,7 +20,8 @@
                         <div class="input-head month-title">
                             MONTH
                         </div>
-                        <input id="month" type="text" name="month" placeholder="MM" autocomplete="off">
+                        <input id="month" type="text" name="month" placeholder="MM" autocomplete="off"
+                            value="<%= userMonth ?? '' %>">
                         <p class="month-err-msg"></p>
                     </div>
                     <!-- Year -->
@@ -27,7 +29,8 @@
                         <div class="input-head year-title">
                             YEAR
                         </div>
-                        <input id="year" type="text" name="year" placeholder="YYYY" autocomplete="off">
+                        <input id="year" type="text" name="year" placeholder="YYYY" autocomplete="off"
+                            value="<%= userYear ?? '' %>">
                         <p class="year-err-msg"></p>
                     </div>
 
@@ -40,19 +43,19 @@
             <div class="result-output-sec">
                 <div>
                     <span id="show-year" class="output">
-                        <%= typeof Year !=='undefined' ? Year : "--" %>
+                        <%=Year%>
                     </span>
                     <p>years</p>
                 </div>
                 <div>
                     <span id="show-month" class="output">
-                        <%= typeof Month !=='undefined' ? Month : "--" %>
+                        <%=Month%>
                     </span>
                     <p>months</p>
                 </div>
                 <div>
                     <span id="show-day" class="output">
-                        <%= typeof Day !=='undefined' ? Day : "--" %>
+                        <%=Day%>
                     </span>
                     <p>days</p>
                 </div>
