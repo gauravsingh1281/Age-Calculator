@@ -7,13 +7,13 @@ A simple web app that calculates the age in years, months, and days from a given
 ## 🚀 Features
 
 - User-friendly input fields for day, month, and year
-- Age calculation logic with proper date adjustment
-- Error validation for:
+- Client-side input validation for:
   - Empty fields
   - Invalid date formats
   - Out-of-range values
+- Displays the result in years, months, and days
 - Preserves user input after form submission
-- Responsive UI using modern CSS
+- Responsive UI using modern CSS for mobile and desktop
 
 ---
 
