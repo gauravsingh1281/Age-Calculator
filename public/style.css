@@ -36,9 +36,10 @@ main {
 .container {
     background-color: var(--White);
     width: 550px;
-    height: 400px;
+    height: fit-content;
     padding: 40px 30px;
     border-radius: 20px 20px 132px 20px;
+    box-shadow: 4px 5px 3px gray;
 }
 
 .input-sec {
@@ -124,13 +125,13 @@ input::placeholder {
 }
 
 .output {
-    font-size: 32px;
+    font-size: 45px;
     color: var(--Purple);
     font-weight: 800;
 }
 
 .result-output-sec div p {
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 800;
     font-family: "Poppins", sans-serif;
     font-style: italic;
