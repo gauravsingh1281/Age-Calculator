@@ -49,4 +49,10 @@ AGE-CALCULATOR/
 ├── index.js                   
 ├── package-lock.json           
 ├── package.json                 
-└── README.md                   
+└── README.md   
+
+## 💻 Preview 
+
+
+https://github.com/user-attachments/assets/43cd61c5-6df1-46f7-9b7a-2e579de4207d
+
